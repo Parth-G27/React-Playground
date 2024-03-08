@@ -4,6 +4,8 @@ import Footer from "./Footer";
 import Food from "./Food";
 import Card from "./components/Card";
 import Students from "./components/Students";
+import List from "./components/List";
+import Button from "./components/Button"
 
 function App() {
   return (
@@ -27,6 +29,16 @@ function App() {
           <Students name = "Hakari" age={25} isStudent={false}/>
           <Students name = "Yamazaki" age={22} isStudent={true}/>
         </Route>
+
+        <Route exact path="/render-lists">
+          <List/>    
+        </Route>
+
+        <Route exact path="/click-event">
+          <Button/>    
+        </Route>
+
+
 
 
 
