@@ -11,6 +11,7 @@ import BioData from "./components/BioData";
 import Counter from "./components/Counter";
 import ColorPicker from "./components/ColorPicker";
 import Car from "./components/Car"
+import ToDoListApp from "./components/ToDoListApp";
 
 function App() {
   return (
@@ -62,6 +63,12 @@ function App() {
         <Route exact path="/car">
           <Car/>    
         </Route>
+
+        <Route exact path="/to-do-list">
+          <ToDoListApp/>    
+        </Route>
+
+
 
 
 
