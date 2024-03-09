@@ -6,6 +6,8 @@ import Card from "./components/Card";
 import Students from "./components/Students";
 import List from "./components/List";
 import Button from "./components/Button"
+import  GroceryList  from "./components/GroceryList";
+import BioData from "./components/BioData";
 
 function App() {
   return (
@@ -37,6 +39,15 @@ function App() {
         <Route exact path="/click-event">
           <Button/>    
         </Route>
+
+        <Route exact path="/grocery">
+          <GroceryList/>    
+        </Route>
+
+        <Route exact path="/biodata">
+          <BioData/>    
+        </Route>
+
 
 
 
