@@ -8,6 +8,9 @@ import List from "./components/List";
 import Button from "./components/Button"
 import  GroceryList  from "./components/GroceryList";
 import BioData from "./components/BioData";
+import Counter from "./components/Counter";
+import ColorPicker from "./components/ColorPicker";
+import Car from "./components/Car"
 
 function App() {
   return (
@@ -46,6 +49,18 @@ function App() {
 
         <Route exact path="/biodata">
           <BioData/>    
+        </Route>
+
+        <Route exact path="/counter">
+          <Counter/>    
+        </Route>
+
+        <Route exact path="/colorpicker">
+          <ColorPicker/>    
+        </Route>
+
+        <Route exact path="/car">
+          <Car/>    
         </Route>
 
 
