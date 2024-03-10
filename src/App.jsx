@@ -5,19 +5,21 @@ import Food from "./Food";
 import Card from "./components/Card";
 import Students from "./components/Students";
 import List from "./components/List";
-import Button from "./components/Button"
-import  GroceryList  from "./components/GroceryList";
+import Button from "./components/Button";
+import GroceryList from "./components/GroceryList";
 import BioData from "./components/BioData";
 import Counter from "./components/Counter";
 import ColorPicker from "./components/ColorPicker";
-import Car from "./components/Car"
+import Car from "./components/Car";
 import ToDoListApp from "./components/ToDoListApp";
+import Testing from "./components/Testing";
+import CountAndColor from "./components/CountAndColor" ;
+import WidthAndHeightOfWindow from "./components/WidthAndHeightOfWindow";
 
 function App() {
   return (
     <Router>
       <Switch>
-
         <Route exact path="/">
           <Header />
           <Food />
@@ -31,50 +33,54 @@ function App() {
         </Route>
 
         <Route exact path="/props">
-          <Students name = "Kusukabe" age={30} isStudent={true}/>
-          <Students name = "Hakari" age={25} isStudent={false}/>
-          <Students name = "Yamazaki" age={22} isStudent={true}/>
+          <Students name="Kusukabe" age={30} isStudent={true} />
+          <Students name="Hakari" age={25} isStudent={false} />
+          <Students name="Yamazaki" age={22} isStudent={true} />
         </Route>
 
         <Route exact path="/render-lists">
-          <List/>    
+          <List />
         </Route>
 
         <Route exact path="/click-event">
-          <Button/>    
+          <Button />
         </Route>
 
         <Route exact path="/grocery">
-          <GroceryList/>    
+          <GroceryList />
         </Route>
 
         <Route exact path="/biodata">
-          <BioData/>    
+          <BioData />
         </Route>
 
         <Route exact path="/counter">
-          <Counter/>    
+          <Counter />
         </Route>
 
         <Route exact path="/colorpicker">
-          <ColorPicker/>    
+          <ColorPicker />
         </Route>
 
         <Route exact path="/car">
-          <Car/>    
+          <Car />
         </Route>
 
         <Route exact path="/to-do-list">
-          <ToDoListApp/>    
+          <ToDoListApp />
         </Route>
 
+        <Route exact path="/count-and-color">
+          <CountAndColor />
+        </Route>
 
+        <Route exact path="/width-and-height-of-window">
+          <WidthAndHeightOfWindow />
+        </Route>
 
-
-
-
-
-
+        <Route exact path="/testing">
+          <Testing />
+        </Route>
       </Switch>
     </Router>
   );
