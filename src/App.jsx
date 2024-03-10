@@ -15,6 +15,7 @@ import ToDoListApp from "./components/ToDoListApp";
 import Testing from "./components/Testing";
 import CountAndColor from "./components/CountAndColor" ;
 import WidthAndHeightOfWindow from "./components/WidthAndHeightOfWindow";
+import DigitalClock from "./components/DigitalClock";
 
 function App() {
   return (
@@ -76,6 +77,10 @@ function App() {
 
         <Route exact path="/width-and-height-of-window">
           <WidthAndHeightOfWindow />
+        </Route>
+
+        <Route exact path="/digital-clock">
+          <DigitalClock />
         </Route>
 
         <Route exact path="/testing">
